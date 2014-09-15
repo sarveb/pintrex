@@ -78,5 +78,6 @@ Pintrex::Application.configure do
   # Use default logging formatter so that PID and timestamp are not suppressed.
   config.log_formatter = ::Logger::Formatter.new
 
+  #required for heroku - set this to host name
   config.action_mailer.default_url_options = { :host => 'pintrex.herokuapp.com' }
 end
